@@ -1,0 +1,121 @@
+/* 사이트 리스트 테이블 스타일 */
+#site {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr; /* 단일 열 */
+    grid-template-rows: auto auto; /* 행 자동 크기 조정 */
+    grid-gap: 20px;
+}
+
+#site table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#site table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+#site table tr:last-child {
+    border-bottom: none;
+}
+
+#site table td {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#site table td a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#site table td a:hover {
+    color: #007bff;
+}
+
+/* 사이트 정보 리스트 스타일 */
+#site_list {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; /* 행 자동 크기 조정 */
+    grid-gap: 20px;
+}
+
+#site_list ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#site_list ul:last-child {
+    border-bottom: none;
+}
+
+#site_list ul li {
+    padding: 10px 0;
+    font-family: '돋움';
+}
+
+#site_list ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#site_list ul li:nth-child(even) {
+    background-color: #fff;
+}
+
+#site_list ul li:first-child {
+    font-weight: bold;
+    background-color: #007bff;
+    color: #fff;
+    padding-left: 10px;
+}
+
+#site_list ul li:nth-child(2) {
+    padding-left: 10px;
+}
+
+#site_list #name {
+    font-weight: bold;
+}
+
+#site_list #show {
+    background-color: lightgreen;
+    font-weight: bold;
+    color: black;
+}
+
+#nope {
+    padding: 10px 0 0 0;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 15px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    #site {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #site_list {
+        width: 100%;
+    }
+}

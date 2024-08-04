@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 90%;
+    border: 1px solid #ddd;
+}
+
+.image-section, .form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form-section form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Login 버튼에 대한 스타일 */
+.login-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 1;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
+/* Sign 버튼에 대한 스타일 */
+.sign-button {
+    background-color: #0079a1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    flex: 0.5;
+
+}
+
+.sign-button:hover {
+    background-color: #00bfbf;
+}

@@ -1,0 +1,214 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+#top, #menu_bar, #header_img {
+    margin: 0 auto;
+    display: block;
+}
+
+#top {
+    position: relative;
+    width: 1000px;
+    height: 40px;
+    display: flex;
+}
+#top h2 {
+    position: absolute;
+    background-color: #baeeff;
+    width: 250px;
+    height: 100%;
+    margin: 0 auto;
+}
+#top h2 a {
+    color: white;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: 'HY견명조';
+    font-weight: bold;
+}
+
+#top #top_menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 auto;
+}
+#top #top_menu li {
+    font-size: 12px;
+    font-family: '나눔고딕';
+    font-weight: 600;
+    display: inline;
+}
+
+#top #top_menu li a {
+    padding: 0 2px 1px 2px;
+    color: blue;
+    font-weight: bold;
+    font-size: 10px;
+    text-decoration: none;
+    border: solid 2px blue;
+    background-color: white;
+}
+
+#menu_bar {
+    margin-top: 3px;
+    position: relative;
+    height: 48px;
+    width: 1000px;
+    background-color: #8bc9e3;
+    font-size: 17px;
+}
+
+#menu_bar ul {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#menu_bar li {
+    padding: 2px 2px 2px 2px;
+    margin: 0;
+}
+
+#menu_bar li a {
+    text-decoration: none;
+    font-family: '나눔고딕';
+    font-weight: bold;
+    color: white;
+}
+
+#menu_bar a:link { color: white; }
+#menu_bar a:hover { color: white; }
+#menu_bar a:visited { color: white; }
+#menu_bar a:active { color: white; }
+
+#header_img {
+    position: relative;
+    left: 0;
+}
+
+#header_img img {
+    width: 1000px;
+    height: 500px;
+}
+
+section {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr; /* 단일 열 */
+    grid-template-rows: auto auto; /* 행 자동 크기 조정 */
+    grid-gap: 20px;
+}
+
+#top10, #local, #local2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: solid 3px #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#top10 {
+    position: fixed;
+    width: 210px;
+    height: fit-content;
+    right: 20px;
+    top: 6%;
+}
+
+#top10 ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#top10 ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 12px;
+    font-family: '나눔고딕';
+    font-weight: bold;
+}
+
+#top10 #head {
+    background-color: indianred;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+#top10 #list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    color: black;
+    padding: 10px 0;
+    border-top: solid 2px #ddd;
+    border-bottom: solid 2px #ddd;
+}
+
+#top10 #list a {
+    color: black;
+    text-decoration: none;
+}
+
+#top10 #list #t {
+    color: blue;
+}
+
+
+#local a, #local2 a {
+    width: 100%;
+    text-align: center;
+    font-family: '나눔고딕';
+    font-weight: bold;
+    background-color: #8bc9e3;
+    color: white;
+}
+
+#local table, #local2 table {
+    width: 100%;
+    border-collapse: collapse; /* 테두리 겹침 제거 */
+    text-align: center;
+}
+
+#local table tr, #local2 table tr {
+    border: 2px solid #ddd;
+}
+
+#local th, #local2 th {
+    padding: 13px;
+    border: 2px solid #ddd;
+    background-color: lightgreen;
+    color: white;
+    font-family: '나눔고딕';
+    font-size: 15px;
+}
+
+#local td, #local2 td {
+    padding: 13px;
+    border: 2px solid #ddd;
+    color: black;
+    font-size: 12px;
+    font-family: '나눔고딕';
+    font-weight: bold;
+}

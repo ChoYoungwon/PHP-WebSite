@@ -1,0 +1,20 @@
+.footer-container {
+    background-color: #333;
+    height: fit-content;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 10px;
+}
+
+.footer-content .contact {
+    display: inline;
+    flex-wrap: wrap;
+}
